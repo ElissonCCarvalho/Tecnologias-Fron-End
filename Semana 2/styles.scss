@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+$primary: #f0b30f;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {  
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/bg.jpg");  
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+}
+
+.theme-text {
+  color: $primary;
+}
+
+.button-primary {
+  
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-border-color: $primary;
+  --bs-btn-hover-color: var(--bs-white);
+  --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+}
