@@ -22,12 +22,3 @@ body {
 .theme-text {
   color: $primary;
 }
-
-.button-primary {
-  
-  --bs-btn-color: var(--bs-white);
-  --bs-btn-border-color: $primary;
-  --bs-btn-hover-color: var(--bs-white);
-  --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-  --bs-btn-active-color: var(--bs-btn-hover-color);
-}
