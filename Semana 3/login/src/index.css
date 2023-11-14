@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: #3d404b;
+}
+
+.input-container {
+  margin: 10px;
+}
+
+.input-box {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 300px;
+}
+
+.user-output {
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 300px;
+  text-align: center;
+}
+
