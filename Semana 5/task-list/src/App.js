@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
   
-  const [tasks, setTasks] = useState([]);
+  const [tasks, setTasks] = useState(['Tarefa 1', 'Tarefa 2', 'Ler a Bíblia', 'Estudar React', 'Tarefa 3', 'Tarefa 4', 'Estudar Android',]);
 
   const addTask = (name) => {
     setTasks(old => { return [...old, name] })

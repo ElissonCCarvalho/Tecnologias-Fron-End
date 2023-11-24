@@ -21,7 +21,7 @@ const TaskForm = ({ onAdd }) => {
           <input type="text" className="form-control w-100" onChange={handleChange} value={ task } placeholder="Adicione uma nova tarefa" />
         </div>
         
-        <button class="btn btn-outline-success col-2" type="submit"  disabled={ task === '' }>Adicionar</button>
+        <button class="btn btn-outline-success btn-sm col-2" type="submit"  disabled={ task === '' }>Adicionar</button>
       </form>
     </div>
   )
