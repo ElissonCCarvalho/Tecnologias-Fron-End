@@ -1,12 +1,13 @@
 import React from 'react';
 import TaskItem from '../TaskItem/TaskItem';
 
-const TaskList = (props) => {  
+const TaskList = ({ tasks, onDelete }) => {
+
   return (
     <div >
       {
-       props.tasks.map((t, i) => (
-        <TaskItem key={i} text={t} />
+       tasks.map((t, i) => (
+        <TaskItem key={i} index={i} text={t} onDelete={onDelete} />
       ))
       }
     </div>
