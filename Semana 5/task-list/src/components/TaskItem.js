@@ -9,19 +9,17 @@ const TaskItem = ({ index, text, onDelete }) => {
   const lowercasedText = text.toLowerCase();
   
   const bgColor = lowercasedText.includes('estudar') || lowercasedText.includes('ler') ? 'bg-primary' : 'bg-body-tertiary';
-  const textColor = bgColor === 'bg-primary' ? 'text-light' : 'text-secondary'
-
-  console.log(textColor)
+  const color = bgColor === 'bg-primary' ? 'light' : 'dark';
 
   return (
     <div className={`p-1 mb-1 ${bgColor} d-flex flex-row justify-content-between align-items-center w-100 rounded`}>
       <div className="form-check">
         <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-        <label className={`form-check-label ${ textColor }`} htmlFor="flexCheckDefault">
+        <label className={`form-check-label text-${ color }`} htmlFor="flexCheckDefault">
           { text }
         </label>
       </div>
-      <button className='btn btn-outline-dark btn-sm col-2' onClick={ handleClick } >Apagar</button>
+      <button className={`btn btn-outline-${ color } btn-sm col-2`} onClick={ handleClick } >Apagar</button>
     </div>
   )
 }
